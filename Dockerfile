@@ -3,4 +3,4 @@ COPY . /user/app/
 EXPOSE 5000
 WORKDIR /user/app/
 RUN pip install -r requirements.txt
-CMD 
+CMD gmb_ner_crf_baseline_with_mlflow.py
