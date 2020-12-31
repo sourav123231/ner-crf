@@ -31,7 +31,7 @@ Original file is located at
 - nat = Natural Phenomenon
 """
 
-ner_df = pd.read_csv('ner_dataset.csv', encoding = 'unicode_escape')
+ner_df = pd.read_csv('ner_dataset121.csv', encoding = 'unicode_escape')
 ner_df.fillna(method = 'ffill', inplace = True)
 ner_df.rename(columns = {'Sentence #':'SentId'}, inplace = True)
 print(ner_df.shape, ner_df.columns)
