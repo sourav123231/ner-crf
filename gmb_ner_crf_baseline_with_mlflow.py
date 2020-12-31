@@ -10,14 +10,14 @@ Original file is located at
 import numpy as np # linear algebra
 import pandas as pd # data processing
 import os
-data_paths = {}
-for dirname, _, filenames in os.walk('/kaggle/input'):
-    for filename in filenames:
-        data_paths[filename] = os.path.join(dirname, filename)
+# data_paths = {}
+# for dirname, _, filenames in os.walk('/kaggle/input'):
+#     for filename in filenames:
+#         data_paths[filename] = os.path.join(dirname, filename)
         
-print(data_paths)
+# print(data_paths)
 
-!pip -q install sklearn-crfsuite seqeval
+# !pip -q install sklearn-crfsuite seqeval
 
 """#### Essential info about entities:
 
@@ -53,7 +53,7 @@ val_sents = sentences[train_end:val_end]
 test_sents = sentences[val_end:]
 len(train_sents), len(val_sents), len(test_sents)
 
-!pip install nltk
+# !pip install nltk
 import nltk
 nltk.download('stopwords')
 
